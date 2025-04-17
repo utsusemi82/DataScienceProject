@@ -1,7 +1,8 @@
 ## Customer Churn Prediction
----
+
 Customer Churn Dataset:
-https://www.kaggle.com/datasets/shubhendra7/customer-churn-prediction-dataset
+
+- https://www.kaggle.com/datasets/shubhendra7/customer-churn-prediction-dataset
 ---
 Overview:
 1. Introduction & Problem Statement
