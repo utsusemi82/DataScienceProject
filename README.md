@@ -4,7 +4,7 @@
 
 In this project, I use a real-world telecom dataset to build a Machine Learning model that predicts customer churn. I will also try to deploy a simple Streamlit app.
 
---
+---
 Telecom Churn Dataset:
 - https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets
 ---
