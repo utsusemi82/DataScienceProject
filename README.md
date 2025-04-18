@@ -7,6 +7,7 @@ In this project, I use a real-world telecom dataset to build a Machine Learning 
 ---
 Telecom Churn Dataset:
 - https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets
+- https://www.kaggle.com/code/kashnitsky/topic-2-visual-data-analysis-in-python (Data Visualization & Analysis)
 ---
 Overview:
 1. Introduction
