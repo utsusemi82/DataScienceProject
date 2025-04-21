@@ -13,7 +13,7 @@ I'll be working on a variety of projects over the coming weeks and beyond, whene
 This repository serves as:
 - A **portfolio** of projects I've completed
 - A **learning log** for techniques and tools I've revised
-- A **roadmap** of upcoming projects I'm excited to tackle
+- A **roadmap** of upcoming projects I'm excited to tackle (perhaps)
 
 ---
 
