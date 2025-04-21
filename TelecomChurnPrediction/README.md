@@ -22,12 +22,16 @@ Overview:
 
 ----
 I will try a lot of *ML supervised classification techniques* for learning and testing purposes for my revision:
-| Random Forest| An ensemble method that combines multiple decision trees, improving prediction accuracy|
-| Logistic Regression | A statistical method that predicts the probability of an event occurring. |
-| Support Vector Machines (SVM) | Find a hyperplane that optimally separates different classes.|
-| K-Nearest Neighbors (KNN) | Classifies a data point based on the majority class of its nearest neighbours in the feature space.|
-| Neural Networks | Mimic the structure of the human brain, learning complex patterns through interconnected nodes.|
-| Decision Trees | Represent decisions and their possible outcomes, with each internal node testing an attribute, and each leaf node representing a class label. |
-| Gradient Boosting | A powerful ensemble ML algorithm that combines multiple weak models (often decision trees) to create a strong predictive model |
-| XGBoost | An open-source ML library that implements gradient boosting algorithms, particularly for tasks like regression, classification, and ranking. |
+
+| **Algorithm**                 | **Description**                                                                                              |
+|------------------------------|--------------------------------------------------------------------------------------------------------------|
+| **Random Forest**            | An ensemble learning method that builds multiple decision trees and merges their results for more accurate and stable predictions. |
+| **Logistic Regression**      | A statistical technique used for binary classification that estimates the probability of a class label.     |
+| **Support Vector Machine (SVM)** | A supervised learning algorithm that finds the optimal hyperplane to separate classes in a high-dimensional space. |
+| **K-Nearest Neighbors (KNN)**| A non-parametric algorithm that classifies data points based on the majority label among their nearest neighbors. |
+| **Neural Networks**          | A set of algorithms inspired by the human brain that recognize complex patterns through layers of interconnected nodes. |
+| **Decision Trees**           | A tree-like model used for decision making, where each node represents a feature and each leaf a class label. |
+| **Gradient Boosting**        | An ensemble technique that sequentially builds weak learners (typically decision trees) to correct the errors of previous models. |
+| **XGBoost**                  | An efficient and scalable implementation of gradient boosting that excels in speed and performance for structured data tasks. |
+
 
