@@ -1,4 +1,4 @@
-# 🧠 DataScienceProject
+# 🧠 Data Science Project
 
 Welcome to my **Data Science Project** repository!  
 This is a personal space where I document my journey into the world of **Machine Learning (ML)** and **Data Science (DS)**.  
