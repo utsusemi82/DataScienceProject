@@ -13,7 +13,6 @@ This project is based on the classic [Kaggle Titanic competition](https://www.ka
 ##  What I Plan to Learn Next 
 - More advanced feature selection techniques
 - Hyperparameter tuning using GridSearchCV or RandomizedSearchCV
-- Understanding model evaluation metrics beyond accuracy (e.g., precision, recall, F1-score)
 - Model explainability using SHAP or LIME
 - Trying ensemble methods like Gradient Boosting or XGBoost
 
