@@ -3,6 +3,7 @@
 Welcome to my **Data Science Project** repository!  
 This is a personal space where I document my journey into the world of **Machine Learning (ML)** and **Data Science (DS)**.  
 I'll be working on a variety of projects over the coming weeks and beyond, whenever time allows.
+Upcoming projects might refer to: ProjectList.md (credit to https://github.com/veb-101/Data-Science-Projects)
 
 ---
 
