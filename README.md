@@ -21,8 +21,8 @@ This repository serves as:
 
 | Project Name | Description | Tools Used | Date |
 |--------------|-------------|------------|------|
-| **Telecom Churn Prediction** | Built a machine learning model to predict customer churn using demographic and service-related features. | Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn | April 2025 |
-| **Titanic Survival Prediction** | Kaggle classic—predicted passenger survival using classification models. | Pandas, Scikit-learn, Matplotlib | April 2025 | 
+| [**Telecom Churn Prediction**](https://github.com/utsusemi82/DataScienceProject/tree/master/TelecomChurnPrediction) | Built a machine learning model to predict customer churn using demographic and service-related features. | Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn | April 2025 |
+| [**Titanic Survival Prediction**](https://github.com/utsusemi82/DataScienceProject/tree/master/TitanicSurvivalPrediction) | Kaggle classic—predicted passenger survival using classification models. | Pandas, Scikit-learn, Matplotlib | April 2025 | 
 
 ---
 
