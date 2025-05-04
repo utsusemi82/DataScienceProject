@@ -26,6 +26,14 @@ This repository serves as:
 
 ---
 
+## 💻 Active Project(s)
+
+| Project Name | Date |
+|--------------|-------------|
+| **Wildfire Cause Prediction** | Since April 2025 |
+
+---
+
 ## 📚 ML/DS Concepts to Learn & Revise
 
 - **Supervised Learning**
