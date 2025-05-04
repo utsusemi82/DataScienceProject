@@ -1,6 +1,6 @@
 ## Wildfire Cause Prediction
 
-| Progess| Ongoing |
+| Current Progess: | *Ongoing* |
 |--------------|-------------|
 
 ---
