@@ -70,7 +70,7 @@ This repository serves as:
 
 - Python, Jupyter, VS Code, Google Colab
 - Pandas, NumPy, Matplotlib, [Seaborn](https://seaborn.pydata.org/)
-- Scikit-learn, XGBoost, LightGBM
+- [Scikit-learn](https://scikit-learn.org/stable/api/sklearn.html), XGBoost, LightGBM
 - TensorFlow, Keras, PyTorch (for DL projects)
 - Streamlit, Plotly (for deployment/visualization)
 
