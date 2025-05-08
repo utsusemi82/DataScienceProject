@@ -9,7 +9,7 @@
 - Focus: Versioning, reproducibility, and deployment of ML models.
 - Who uses it: ML engineers and data scientists working on model experimentation.
 
-#### 3.0 Delta Lake
+#### 3. Delta Lake
 - An open-source storage layer that brings ACID transactions to Apache Spark and big data lakes.
 - Focus: Reliable data lakes with versioning and schema enforcement.
 - Who uses it: Data engineers and big data teams (often with Databricks or Spark).
@@ -26,7 +26,7 @@
 - Focus: Cloud services with strong emphasis on AI and analytics.
 - Relevant ML tools: Vertex AI, BigQuery, Cloud Storage.
 
-#### 3.Microsoft Azure
+#### 3. Microsoft Azure
 - Microsoft’s cloud platform.
 - Focus: Cloud computing, data services, and enterprise integrations.
 - Relevant ML tools: Azure ML, Synapse Analytics, Data Lake Storage.
