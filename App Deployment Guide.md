@@ -145,4 +145,15 @@ docker run -p 8501:8501 my-streamlit-app
 
 ---
 
-Feel free to customize the deployment approach depending on your performance, budget, and platform needs.
+## Summary 
+
+| Feature                   | **Streamlit Cloud**   | **Heroku**                  | **Docker + Cloud**         |
+| ------------------------- | --------------------- | --------------------------- | -------------------------- |
+| 🧠 Learning Curve         | Very Low              | Low                         | Medium to High             |
+| 🔁 Supports Non-Streamlit | ❌ No                  | ✅ Yes                       | ✅ Yes                      |
+| 🚀 Speed of Deployment    | Instant               | \~5–10 minutes              | Depends on setup           |
+| 🧪 Model Inference        | Light only (CPU)      | Moderate (CPU, limited RAM) | Full (GPU, any custom lib) |
+| 🆓 Free Tier              | ✅ Yes (limited hours) | ❌ No                        | Depends on provider        |
+| 🔩 Custom Dependencies    | Limited               | Some                        | Full                       |
+| 🌐 Custom Domain          | ✅ Easy                | ✅ Easy                      | ✅ Custom DNS/SSL needed    |
+
