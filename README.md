@@ -5,6 +5,7 @@ This is a personal space where I document my journey into the world of Machine L
 I'll be working on a variety of projects over the coming weeks and beyond, whenever time allows.
 
 [List of projects](https://github.com/utsusemi82/DataScienceProject/blob/528b0a71be09405fab95b6cb071ce48a79e28e3a/ProjectList.md)
+[Top DS projects](https://www.geeksforgeeks.org/top-data-science-projects/)
 
 ---
 
