@@ -71,7 +71,7 @@ This repository serves as:
 - Python, Jupyter, VS Code, Google Colab
 - [Pandas](https://pytolearn.csd.auth.gr/b4-pandas/40/whatispandas.html), NumPy, Matplotlib, [Seaborn](https://seaborn.pydata.org/)
 - [Scikit-learn](https://scikit-learn.org/stable/api/sklearn.html), XGBoost, LightGBM
-- TensorFlow, Keras, PyTorch (for DL projects)
+- [TensorFlow](https://www.geeksforgeeks.org/tensorflow/), Keras, PyTorch (for DL projects)
 - Streamlit, Plotly (for deployment/visualization)
 
 ---
