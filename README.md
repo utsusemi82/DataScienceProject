@@ -54,7 +54,7 @@ This repository serves as:
   - SHAP, LIME
 
 - **Deep Learning (DL)**
-  - Feedforward Neural Networks
+  - Feedforward Neural Networks, [Deep Learning](https://course.fast.ai/)
   - CNNs, RNNs (LSTM, GRU)
   - TensorFlow & PyTorch basics
 
