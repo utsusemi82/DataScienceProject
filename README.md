@@ -40,7 +40,7 @@ This repository serves as:
 - **Supervised Learning**
   - Linear/Logistic Regression
   - Decision Trees, Random Forest, Gradient Boosting, XGBoost
-  - KNN, SVM, Naive Bayes
+  - KNN, SVM, Naive Bayes 
 
 - **Unsupervised Learning**
   - K-Means, DBSCAN
