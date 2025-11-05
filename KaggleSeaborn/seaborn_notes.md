@@ -31,3 +31,7 @@
 |**sns.histplot**| Histograms show the distribution of a single numerical variable.|
 |**sns.kdeplot**| KDE plots (or 2D KDE plots) show an estimated, smooth distribution of a single numerical variable (or two numerical variables).|
 |**sns.jointplot**| This command is useful for simultaneously displaying a 2D KDE plot with the corresponding KDE plots for each individual variable.|
+
+---
+
+<img width="4800" height="2960" alt="utsusemi82 - Data Visualization" src="https://github.com/user-attachments/assets/7d0675f9-0d6d-45cd-966e-32427d28ef4e" />
