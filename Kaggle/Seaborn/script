@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Config - change only if you need different branches/paths
+SRC_REPO="git@github.com:utsusemi82/DataScienceProject.git"
+SRC_BRANCH="main"
+SRC_SUBDIR="KaggleSeaborn"
+
+TARGET_REPO="git@github.com:utsusemi82/Kaggle.git"
+TARGET_BRANCH="main"                # branch in target to base the import on
+IMPORT_BRANCH="import/kaggleseaborn" # branch that will be created in the target repo
+TARGET_PREFIX="Seaborn/"            # existing subdirectory in target repo (must exist)
+
+# 1) Clone source and create a split branch that contains only the SUBDIR content as repo root
+echo "Cloning source repo..."
+git clone "$SRC_REPO" DataScienceProject-import
+cd DataScienceProject-import
+git checkout "$SRC_BRANCH"
+
+echo "Creating subtree split branch (kaggleseaborn-split)..."
+git subtree split -P "$SRC_SUBDIR" -b kaggleseaborn-split
+
+echo "Pushing split branch to source remote (temporary branch)..."
+git push origin kaggleseaborn-split
+
+cd ..
+
+# 2) Clone target repo and import the split branch into a prefix
+echo "Cloning target repo..."
+git clone "$TARGET_REPO" Kaggle-import
+cd Kaggle-import
+git checkout "$TARGET_BRANCH"
+
+echo "Creating import branch: $IMPORT_BRANCH"
+git checkout -b "$IMPORT_BRANCH"
+
+echo "Adding source repo as remote 'oldrepo' and fetching the split branch..."
+git remote add oldrepo "$SRC_REPO"
+git fetch oldrepo kaggleseaborn-split
+
+# 3) Merge the history while placing files under the prefix
+# Use 'ours' merge strategy to create merge base, then replace tree with read-tree contents from split branch.
+echo "Merging histories and placing files into $TARGET_PREFIX ..."
+git merge -s ours --no-commit oldrepo/kaggleseaborn-split || true
+git read-tree --prefix="$TARGET_PREFIX" -u oldrepo/kaggleseabern-split 2>/dev/null || true
+
+# The above read-tree line may fail on certain older git versions if the remote ref name is slightly different.
+# If the read-tree step above failed, try instead using the fetched ref directly:
+if ! git ls-files --error-unmatch "$TARGET_PREFIX" >/dev/null 2>&1; then
+  # find fetched ref name
+  FETCHED_REF=$(git show-ref --head | grep kaggleseaborn-split | awk '{print $2}' | head -n1 || true)
+  if [ -n "$FETCHED_REF" ]; then
+    git read-tree --prefix="$TARGET_PREFIX" -u "$FETCHED_REF"
+  else
+    echo "ERROR: could not find fetched kaggleseaborn-split ref. Abort."
+    exit 1
+  fi
+fi
+
+# Commit the import
+git commit -m "Import KaggleSeaborn from DataScienceProject (preserve history) into ${TARGET_PREFIX}"
+
+# Push import branch to target remote
+echo "Pushing branch $IMPORT_BRANCH to target remote..."
+git push -u origin "$IMPORT_BRANCH"
+
+cd ..
+
+echo "Done. The branch '$IMPORT_BRANCH' has been pushed to the target repo."
+echo ""
+echo "Open a PR on GitHub from '$IMPORT_BRANCH' -> '$TARGET_BRANCH' and review the imported files under ${TARGET_PREFIX}"
+echo ""
+echo "Optional cleanup (run manually if you want to remove the temporary split branch in the source repo):"
+echo "  cd DataScienceProject-import && git push origin --delete kaggleseaborn-split && cd .. && rm -rf DataScienceProject-import"
