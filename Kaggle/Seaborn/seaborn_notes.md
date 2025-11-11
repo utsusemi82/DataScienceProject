@@ -33,5 +33,5 @@
 |**sns.jointplot**| This command is useful for simultaneously displaying a 2D KDE plot with the corresponding KDE plots for each individual variable.|
 
 ---
+![Uploading Jay Cher - Data Visualization.png…]()
 
-<img width="4800" height="2960" alt="utsusemi82 - Data Visualization" src="https://github.com/user-attachments/assets/7d0675f9-0d6d-45cd-966e-32427d28ef4e" />
